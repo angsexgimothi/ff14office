@@ -38,7 +38,7 @@ function App() {
               
               <div className='bodyBannerMassageWarp'>
                 <div className='bodyBannerMassage1'>
-                  하우징부터 돌발임무, 고민상담 까지 다양한 의뢰를 맡고 있습니다. 곤란할때 여러분의 힘이 되어드리겠습니다. 
+                  고민 상담부터 돌발임무, 던전 도우미 하우징까지 다양한 의뢰를 받고 있습니다. 곤란할때 여러분의 힘이 되어드리겠습니다. 
                   <br></br>한줄정도 더 길었으면 좋겠는데 무엇을 써야할지 모르겠음 추천 받습니다. 가나다라마바사아자차카파타하.123123123
                 </div>
                 <div className='bodyBannerMassage2'>
