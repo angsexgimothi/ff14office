@@ -256,7 +256,6 @@ table {
 .HouseImg1,.HouseImg2,.HouseImg3{
   width:100%;
   height:400px;
-  background-color: #211E20;
 }
 .HouseImg3{
   margin-bottom: 70px;
@@ -343,3 +342,138 @@ table {
 .footerSpan{
   margin-right:20px;
 }
+.chrIntro1Warp{
+  width:100%;
+  height:100vh;
+  position:relative;
+  overflow: hidden;
+  display:grid;
+  grid-template-columns: 1fr;
+  
+}
+.chrIntro{
+  
+  display:grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 5fr 1fr;
+  grid-gap:20px;
+  position:absolute;
+  height:740px;
+  top:50%;
+  transform: translate(0,-50%);
+  margin:0px 40px;
+  
+}
+.arrowLeftWarp,.arrowRightWarp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chrName{
+  display: flex;
+
+  align-items: center;
+  font-family: ds-stereo-mild, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform:rotate(180deg);
+  line-height: 44px;
+}
+.chrNameWarp>span:first-child{
+  margin-bottom:20px;
+}
+.chrNameWarp>span:nth-child(2){
+  opacity: 0.4;
+}
+.chrInfo{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.chrInfoTitle{
+  font-size: 55px;
+  margin-bottom: 20px;
+
+}
+.chrInfoSubTitle{
+  font-size: 20px;
+  color:#E9D894;
+  margin-bottom: 20px;
+}
+.chrInfoText{
+  font-size: 16px;
+  opacity: 0.8;
+  overflow:hidden ;
+  line-height: 20px;;
+}
+.chrInfoRole{
+  font-size: 20px;
+}
+.chrInfoRole>li{
+  font-size: 16px;
+  margin: 20px 0;
+  line-height:20px;
+  opacity: 0.8;
+
+}
+.chrInfoTime{
+  font-size: 20px;
+}
+.chrInfoTime>li{
+  margin: 20px 0;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+.chrInfoTime>li:last-child{
+  margin:0px 0px;
+}
+.chrInfoTime span{
+  margin-right:20px;
+}
+.chrinfoImg{
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.chrinfoImg>img{
+  position:relative;
+  z-index: 1;
+}
+.chrinfoImgText>div{
+  position:absolute;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform:rotate(180deg);
+  font-size:72px;
+  font-family: ds-stereo-wild, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+
+}
+.chrinfoImgText>div:first-child{
+  right:0px;
+  bottom:0px;
+  opacity: 0.5;
+}
+.chrinfoImgText>div:nth-child(2){
+  right:80px;
+  bottom:0px;
+  opacity: 0.2;
+}
+.chrinfoImgText>div:nth-child(3){
+  right:160px;
+  bottom:0px;
+  opacity: 0.2;
+}
+.chrinfoImgText>div:last-child{
+  right:240px;
+  bottom:0px;
+  opacity: 0.2;
+}
+
+

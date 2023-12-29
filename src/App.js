@@ -4,6 +4,7 @@ function App() {
   return (
     <div className="App">
       <div className='mainWarper'>
+        {/* 나중에 리모콘같은거 추가하기  */}
         <div className='headWarper'>
           <div></div>
           <div className='headMenuWarp'>
@@ -18,9 +19,6 @@ function App() {
               <li className='menuReview'>리뷰</li>
             </ul>
           </div>
-
-
-
         </div>
         <div className='mainbodywarper'>
           <div className='bodyGrid'>
@@ -98,11 +96,14 @@ function App() {
                 <div className='houseImgTitle'>
                   내부 사진
                 </div>
-                <div className='HouseImg1'>  
+                <div className='HouseImg1'>
+                  <img src='/images/building/office_1.png' alt='office1'></img>  
                 </div>
-                <div className='HouseImg2'>  
+                <div className='HouseImg2'>
+                 <img src='/images/building/office_2.png' alt='office2'></img>    
                 </div>
-                <div className='HouseImg3'>  
+                <div className='HouseImg3'>
+                  <img src='/images/building/office_3.png' alt='office3'></img>    
                 </div>
               </div>
               <div className='main'>
@@ -116,6 +117,7 @@ function App() {
         </div>
 
       </div>
+
       <div className='footerWarper'>
         <div className='footerGridSystem'>
           <div></div>
@@ -164,6 +166,70 @@ function App() {
           <div></div>
         </div>
 
+      </div>
+      <div className='chrIntro1Warp'>
+        <div className='chrIntro'>
+          <div className='arrowLeftWarp'>
+            <img alt='arrowLeft' src='/images/icon/arrowLeft.png' className='arrowLeft'></img>
+          </div>
+          <div className='chrName'>
+            <div className='chrNameWarp'>
+              <span>
+                우냐
+              </span>
+              <span>
+                1
+              </span>
+            </div>
+          </div>
+          <div className='chrInfo'>
+            <div>
+              <div className='chrInfoTitle'>
+                우냐
+              </div>
+              <div className='chrInfoSubTitle'>
+                  대충 하고싶은 한마디. 강조하게.
+              </div>
+              <div className='chrInfoText'>
+                더미텍스트들입니다 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+                더미텍스트들입니다 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+                더미텍스트들입니다 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+                더미텍스트들입니다 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+                더미텍스트들입니다 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+              </div>
+            </div>  
+            <div>
+              <ul className='chrInfoRole'>
+                역할
+                <li>하고싶은거 1</li>
+                <li>하고싶은거 2</li>
+                <li>하고싶은거 3</li>
+                <li>하고싶은거 4</li>
+              </ul>
+            </div>
+              <div>
+                <ul className='chrInfoTime'>
+                  접속 시간대
+                  <li><span>평일</span> 20 : 00 ~ 23 : 00 </li>
+                  <li><span>주말</span> 20 : 00 ~ 23 : 00 </li>
+                </ul>
+              
+              </div>
+            </div>
+          <div></div>
+          <div className='chrinfoImg'>
+            <img src='/images/character/unya(L).png' alt='uyna(L)'></img>
+            <div className='chrinfoImgText'>
+              <div>하고싶은거1</div>
+              <div>하고싶은거2</div>
+              <div>하고싶은거3</div>
+              <div>하고싶은거4</div>
+            </div>
+          </div>
+          <div className='arrowRightWarp'>
+            <img alt='arrowright' src='/images/icon/arrowRight.png' className='arrowright'></img>
+          </div>
+        </div>
       </div>
     </div>
   );
