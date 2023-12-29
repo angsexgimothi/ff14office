@@ -38,8 +38,8 @@ function App() {
               
               <div className='bodyBannerMassageWarp'>
                 <div className='bodyBannerMassage1'>
-                  고민 상담부터 돌발임무, 던전 도우미 하우징까지 다양한 의뢰를 받고 있습니다. 곤란할때 여러분의 힘이 되어드리겠습니다. 
-                  <br></br>한줄정도 더 길었으면 좋겠는데 무엇을 써야할지 모르겠음 추천 받습니다. 가나다라마바사아자차카파타하.123123123
+                  고민과 무료함에 빠진 에오르제아인을 위한 사무소 입니다. 여러분의 한걸음 한걸음이 되어드리겠습니다.
+                  <br></br>고민상담부터 돌발임무 및 던전 도우미, 하우징등 다양한 의뢰들을 손이 닿는대로 도와드립니다. 
                 </div>
                 <div className='bodyBannerMassage2'>
                   펜리르 시로가네 1구 38번지
@@ -58,9 +58,7 @@ function App() {
                     </div>
                   </div>
                   <div className='bodyCharacterBanner2 characterBanners'>
-                    <div className='tigim'>
-
-                    </div>
+                    <img src='/images/character/tigim(s).png' alt='tigim'></img>
                     <div className='characterFontWarper'>  
                       <div className='tigimFont1'>티김</div>
                       <div className='tigimFont2'>티김</div>
