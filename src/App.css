@@ -1,38 +1,347 @@
-.App {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.App{
+  width:100%;
+  background-color:#161514 ;
+  font-family: 'Noto Sans KR', sans-serif;
+  color:white;
+}
+.mainWarper{
+  margin:0px 40px;
+  overflow: hidden;
+}
+.headWarper{
+  margin-top:25px;
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+}
+.headMenuWarp{
+  min-width:910px;
+}
+
+
+.mainMenu>li{
+  display:inline;
+}
+.headTitle{
+  font-size:18px;
+  font-weight: 700;
+  margin-bottom:15px;
+}
+.headBox1{
+  border-bottom:1px solid white;
+  width:370px;
+  margin-bottom:15px;
+  opacity: 0.6;
+}
+.mainMenu{
+  padding:0px 20px;
+  background-color: #211E20;
+  display:inline-block;
+  height:30px;
+  line-height: 30px;;
+  margin-bottom:30px;
+  font-size: 16px;
+}
+.mainMenu>li{
+  margin-left:25px;
+}
+.mainMenu>li:first-child{
+  margin-left:0px;
+}
+.menuMainPage{
+  color : #E9D894;
+}
+
+.bodyGrid{
+  display:grid;
+  grid-template-columns: 3fr 6fr 3fr;
+
+}
+.bodyImgWarp{
+  position:relative;
   text-align: center;
+  font-family: ds-stereo-mild, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  min-width:910px;
+  height:400px;
+
+
+}
+.bodyBannerImg{
+  position:relative;
+  z-index: 10;
+
+}
+.bodyBannerText{
+  position:absolute;
+  font-size: 47px;
+  color:#fff;
+
+  bottom:-1.5px;
+  left:50%;
+  transform: translate(-50%,0%);
+  z-index: 2;
+
+}
+.bodyBannerText>div{
+  margin-top:10px;
+}
+.bodyBannerText1{
+  opacity: 0.5;
+}
+.bodyBannerText2{
+  opacity: 0.2;
+}
+.bodyBannerMassageWarp{
+  margin-top: 20px;
+  line-height: 20px;
+  margin-bottom:50px;
+}
+.bodyBannerMassage1{
+  opacity: 0.8;
+}
+.bodyBannerMassage2{
+  opacity: 0.6;
+  margin-top:20px;
+}
+.bodyCharacterBannerTitle{
+  margin-bottom:20px;
+}
+.bodyCharacterBannerGrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 20px;
+}
+.bodyCharacterBannerGrid>div{
+  height:380px;
+
+}
+.characterBanners{
+  position:relative;
+}
+.characterBanners>img{
+  position:relative;
+  z-index: 1;
+}
+.characterFontWarper{
+  font-family: ds-stereo-wild, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+}
+.unyaFont1,.unyaFont2,.tigimFont1,.tigimFont2,
+.sweatFont1,.sweatFont2,.bambi1,
+.bambi2,.kaldae1,.kaldae2,.turtle1,.turtle2{
+  position:absolute;
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  transform:rotate(180deg);
+  line-height: 44px;
+
+
+}
+.unyaFont1{
+  right:0px;
+  bottom:0;
+  opacity: 0.5;
+}
+.unyaFont2{
+  right:55px;
+  bottom:0;
+  opacity: 0.2;
+}
+.bodyCharacterBanner2{
+  background-color: #211E20;
+}
+.tigimFont1{
+  right:0px;
+  bottom:0;
+  opacity: 0.5;
+}
+.tigimFont2{
+  right:55px;
+  bottom:0;
+  opacity: 0.2;
+}
+.sweatFont1{
+  right:0px;
+  bottom:0;
+  opacity:0.5;
+}
+.sweatFont2{
+  right:55px;
+  bottom:0;
+  opacity:0.2;
+}
+.bambi1{
+  right:0px;
+  bottom:80px;
+  opacity:0.5;
+}
+.bambi2{
+  right:55px;
+  bottom:80px;
+  opacity:0.2;
+}
+.kaldae1{
+  right:0px;
+  bottom:0;
+  opacity:0.5;
+}
+.kaldae2{
+    right:55px;
+    bottom:0;
+    opacity:0.2;
+}
+.turtle1{
+  right:0px;
+  bottom:0;
+  opacity:0.5;
+}
+.turtle2{
+    right:55px;
+    bottom:0;
+    opacity:0.2;
+}
+.bodyCharacterBannerWarper{
+  margin-bottom:50px;
+}
+.houseImgTitle{
+  margin-bottom:25px;
+}
+.HouseImg2{
+  margin:20px 0px;
+}
+.HouseImg1,.HouseImg2,.HouseImg3{
+  width:100%;
+  height:400px;
+  background-color: #211E20;
+}
+.HouseImg3{
+  margin-bottom: 70px;
+}
+.footerFlex{
+  display: flex;
+  justify-content: space-between;
+}
+.footerWarper{
+  width:100%;
+  height:91px;
+  padding:40px 0px;
+  background-color: #211E20;
+}
+.footerGridSystem{
+  display:grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  margin:0px 40px;
+}
+.footerMain{
+  width:910px;
+  font-size: 14px;
+  line-height: 14px;
+
+}
+.footerLeft{
+
+
+  position:relative;
+  width:500px;
+  height:91px;
+
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.footerTitle{
+  opacity: 0.8;
+  height:14px;
+  width:500px;
 }
+.footerColumns1{
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  opacity: 0.6;
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.footerColumns1,.footerColumns2,.footerColumns3{
+  height: 52px;
+  margin-top:24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+
 }
 
-.App-link {
-  color: #61dafb;
-}
+.footerColumns2{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  margin-right:20px;
+  margin-left:20px;
+  opacity: 0.6;
+
+}
+.footerColumns3{
+
+  opacity: 0.6;
+
+}
+.fotterLeftFlex{
+  display:flex;
+  flex-wrap: wrap;
+}
+.footerRightFlex{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height:91px;
+}
+.footerRightInfo{
+  opacity:0.8;
+}
+.footerRightTime,.footerRightLocation{
+  opacity:0.6;
+}
+.footerSpan{
+  margin-right:20px;
 }
