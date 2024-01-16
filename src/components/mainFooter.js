@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FOOTER ({}){
+function FOOTER (){
   return(
   <div className='footerWarper'>
       <div className='footerGridSystem'>
