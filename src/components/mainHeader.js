@@ -7,7 +7,7 @@ const handleMouseEnter = (event) => {
   event.target.style.color = '#E0D994';
 };
 
-function HEADWARPER() {
+function HEADWARPER(props) {
   return (
     <div className='headWarper'>
       <div></div>
@@ -17,10 +17,10 @@ function HEADWARPER() {
         </div>
         <div className='headBox1'></div>
         <ul className='mainMenu'>
-          <li onMouseOver={handleMouseEnter} className='menuMainPage'>메인화면</li>
-          <li onMouseOver={handleMouseEnter} className='menuInfomation'>이용안내</li>
-          <li onMouseOver={handleMouseEnter} className='menuContact'>의뢰 & 해결내역</li>
-          <li onMouseOver={handleMouseEnter} className='menuReview'>리뷰</li>
+          <li onMouseOver={handleMouseEnter} onClick={()=>props.setHeadValue(1)} className='menuMainPage'>메인화면</li>
+          <li onMouseOver={handleMouseEnter} onClick={()=>props.setHeadValue(2)} className='menuInfomation'>이용안내</li>
+          <li onMouseOver={handleMouseEnter} onClick={()=>props.setHeadValue(3)} className='menuContact'>의뢰 & 해결내역</li>
+          <li onMouseOver={handleMouseEnter} onClick={()=>props.setHeadValue(4)} className='menuReview'>리뷰</li>
         </ul>
       </div>
     </div>

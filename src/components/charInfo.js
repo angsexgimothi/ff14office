@@ -35,7 +35,7 @@ import React from 'react';
                 </div>,
                 subtitle :  
                 <div className='chrInfoSubTitle'>       
-                    대충 하고싶은 한마디. 강조하게.1
+                    머리는 작아졌어도 몸은 그대로 미궁을 모르는 명탐정!(진짜모름)
                 </div>,
                 text :
                     <div className='chrInfoText'>
@@ -320,23 +320,20 @@ import React from 'react';
                 </div>,
                 subtitle :  
                 <div className='chrInfoSubTitle'>       
-                    대충 하고싶은 한마디. 강조하게.6
+                    제작, 채집, 하우징, 사이트 담당
                 </div>,
                 text :
                     <div className='chrInfoText'>
-                        더미텍스트들입니다1 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
-                        더미텍스트들입니다1 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
-                        더미텍스트들입니다1 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
-                        더미텍스트들입니다1 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
-                        더미텍스트들입니다1 가나다라마바사 대충 채우고 크기에 따라 위치 변동할 예정
+                        자신에게 알맞는 제작 메크로가 필요하시거나, 제작 및 채집 레벨링에 도움이 필요하시면 도움을 드릴 수 있습니다. 제작 채집하실 시 심심하셔도 같이 해드릴 수 있습니다. 또한 하우징 관련 의뢰도 수행중이니 필요하시면 말씀해주세요. 팀에 다양한 잡무를 담당하고 있습니다.
+
                     </div>,
                 role :
                     <ul className='chrInfoRole'>
                     역할
-                        <li>하고싶은거 6</li>
-                        <li>하고싶은거 6</li>
-                        <li>하고싶은거 6</li>
-                        <li>하고싶은거 6</li>
+                        <li>채집</li>
+                        <li>제작</li>
+                        <li>사이트 기획</li>
+                        <li>하우징</li>
                     </ul>,
                 time :
                     <div>
@@ -350,10 +347,10 @@ import React from 'react';
                 <div className='chrinfoImg'>
                     <img src='/images/character/charImg(6).png' alt='uyna(L)'></img>
                     <div className='chrinfoImgText'>
-                    <div>하고싶은거6</div>
-                    <div>하고싶은거6</div>
-                    <div>하고싶은거6</div>
-                    <div>하고싶은거6</div>
+                    <div>채집</div>
+                    <div>제작</div>
+                    <div>사이트 기획</div>
+                    <div>하우징</div>
                     </div>
                 </div>    
                 
