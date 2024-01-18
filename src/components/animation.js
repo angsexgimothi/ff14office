@@ -1,6 +1,8 @@
-import React from "react";
+import React, {useEffect} from "react";
 
-const ANIMATION = ()=>{
+
+const ANIMATION = (props)=>{
+    useEffect(()=>{setTimeout(()=>props.setAnim(false), 1.51*1000)},[])
     return(
         <div>
             <section className="page-loading-blocks gray-bg">

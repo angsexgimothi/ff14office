@@ -5,14 +5,23 @@ import React from 'react';
         const LeftArrow = ()=>{
             return(
             <div className='arrowLeftWarp'>
-                <img alt='arrowLeft' src='/images/icon/arrowLeft.png' className='arrowLeft' onClick={()=>props.setValue(props.value-1)}></img>
+                <img alt='arrowLeft' src='/images/icon/arrowLeft.png' className='arrowLeft' onClick={()=>{
+                    if(props.anim) return;
+                    setTimeout(()=>{props.setValue(props.value-1)}, 0.7*1000)
+                    props.setAnim(true);
+                    
+                    }}></img>
             </div>
             )
         }
         const RightArrow = ()=>{
             return(
             <div className='arrowRightWarp'>
-                <img alt='arrowright' src='/images/icon/arrowRight.png' className='arrowright' onClick={()=>props.setValue(props.value+1)}></img>
+                <img alt='arrowright' src='/images/icon/arrowRight.png' className='arrowright' onClick={()=>{
+                    if(props.anim) return;
+                    setTimeout(()=>{props.setValue(props.value+1)}, 0.7*1000)
+                    props.setAnim(true);
+                }}></img>
             </div>
             )
         }
@@ -384,9 +393,10 @@ import React from 'react';
                     <div className='rightArea'>
                         <div className='closeButton'>
                             <img alt="closeButton" src='/images/icon/closeicon.png' className='closeButton' onClick={()=>{
+                                if(props.anim) return;
                                 setTimeout(()=>{props.setValue(0)}, 0.7*1000)
-                                props.setToggleAni(!props.toggleAni);
-                                props.setControlAni(prev=>prev + 1);
+                                props.setAnim(true);
+                                // props.setControlAni(prev=>prev + 1);
                                 }}></img>
                         </div>
                         {props.value === 6 ? <div></div> : <RightArrow/> }

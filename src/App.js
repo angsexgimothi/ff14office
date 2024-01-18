@@ -12,6 +12,8 @@ const App = () => {
   let [headValue,setHeadValue] = useState(1);
   let [toggleAni,setToggleAni] = useState(false);
   let [controlAni,setControlAni] = useState(0);
+  let [toggleAni2,setToggleAni2] = useState(false);
+  const [anim, setAnim] = useState(false);
   // useEffect(()=>{
   // console.log(value);
   
@@ -28,20 +30,25 @@ const App = () => {
   return (
     <div className="App">
       <div className='mainWarper'>
-        {toggleAni || controlAni === 0 ?  <></> : <ANIMATION/>}
-        {toggleAni ? <ANIMATION/> : <></>}
+        {anim ? <ANIMATION setAnim={setAnim}/> : <></>}
+        
         {value === 0? <HEADWARPER setHeadValue={setHeadValue}/> :<></>}
         {value === 0 && headValue === 1 ? <MAINBODY 
+        anim = {anim}
         setValue={setValue} 
         toggleAni = {toggleAni} setToggleAni = {setToggleAni}
+        setAnim = {setAnim}
         /> :<></> }
         {headValue ===2 ? <INFORMATION/> : <></>}
       </div>
       {value === 0? <FOOTER /> : <></>}
       {value === 0? <></> : <CHARACTERINFO 
       value = {value} setValue={setValue} 
-      toggleAni = {toggleAni} setToggleAni = {setToggleAni}
-      controlAni = {controlAni} setControlAni = {setControlAni}
+      setAnim={setAnim}
+      anim = {anim}
+      // toggleAni = {toggleAni} setToggleAni = {setToggleAni}
+      // controlAni = {controlAni} setControlAni = {setControlAni}
+      // toggleAni2 = {toggleAni2} setToggleAni2 = {setToggleAni2}
       />}
     </div>
 

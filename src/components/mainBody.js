@@ -31,8 +31,9 @@ const MAINBODY = (props) => {
                 <div className='bodyCharacterBannerGrid'>
                   <div className='bodyCharacterBanner1 characterBanners'>
                     <img src='/images/character/unya(s).png' onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(1)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}  alt='unya' ></img>
                     <div className='characterFontWarper'>  
                       <div className='unyaFont1'>우냐</div>
@@ -41,8 +42,9 @@ const MAINBODY = (props) => {
                   </div>
                   <div className='bodyCharacterBanner2 characterBanners'>
                     <img  src='/images/character/tigim(s).png' onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(2)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}   alt='tigim'></img>
                     <div className='characterFontWarper'>  
                       <div className='tigimFont1'>티김</div>
@@ -51,8 +53,9 @@ const MAINBODY = (props) => {
                   </div>
                   <div className='bodyCharacterBanner3 characterBanners'>
                     <img  src='/images/character/sweat(s).png' onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(3)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}   alt='sweat'></img>
                     <div className='characterFontWarper'>  
                       <div className='sweatFont1'>농쭉이</div>
@@ -61,8 +64,9 @@ const MAINBODY = (props) => {
                   </div>
                   <div className='bodyCharacterBanner4 characterBanners'>
                     <img src='/images/character/bambi(s).png'onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(4)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}   alt='bambi'></img>
                     <div className='characterFontWarper'>  
                       <div className='bambi1'>김밤비</div>
@@ -71,8 +75,9 @@ const MAINBODY = (props) => {
                   </div>
                   <div className='bodyCharacterBanner5 characterBanners'>
                     <img src='/images/character/kaldae(s).png' onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(5)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}   alt='kaldae'></img>
                     <div className='characterFontWarper'>  
                       <div className='kaldae1'>칼데하데</div>
@@ -81,8 +86,9 @@ const MAINBODY = (props) => {
                   </div>
                   <div className='bodyCharacterBanner6 characterBanners'>
                     <img src='/images/character/turtle(s).png' onClick={()=>{
+                      if(props.anim) return;
                       setTimeout(()=>{props.setValue(6)}, 0.7*1000)
-                      props.setToggleAni(!props.toggleAni);
+                      props.setAnim(true);
                     }}  alt='turtle'></img>
                     <div className='characterFontWarper'>  
                       <div className='turtle1'>거북바위솔</div>
