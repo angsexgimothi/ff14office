@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useEffect,useState} from 'react';
+import React, {useState} from 'react';
 import HEADWARPER from './components/mainHeader.js';
 import MAINBODY from './components/mainBody.js';
 import FOOTER from './components/mainFooter.js';
