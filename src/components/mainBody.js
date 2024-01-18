@@ -30,42 +30,60 @@ const MAINBODY = (props) => {
                 
                 <div className='bodyCharacterBannerGrid'>
                   <div className='bodyCharacterBanner1 characterBanners'>
-                    <img src='/images/character/unya(s).png' onClick={()=>props.setValue(1)} alt='unya' ></img>
+                    <img src='/images/character/unya(s).png' onClick={()=>{
+                      setTimeout(()=>{props.setValue(1)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}  alt='unya' ></img>
                     <div className='characterFontWarper'>  
                       <div className='unyaFont1'>우냐</div>
                       <div className='unyaFont2'>우냐</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner2 characterBanners'>
-                    <img  src='/images/character/tigim(s).png' onClick={()=>props.setValue(2)}  alt='tigim'></img>
+                    <img  src='/images/character/tigim(s).png' onClick={()=>{
+                      setTimeout(()=>{props.setValue(2)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}   alt='tigim'></img>
                     <div className='characterFontWarper'>  
                       <div className='tigimFont1'>티김</div>
                       <div className='tigimFont2'>티김</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner3 characterBanners'>
-                    <img  src='/images/character/sweat(s).png' onClick={()=>props.setValue(3)}  alt='sweat'></img>
+                    <img  src='/images/character/sweat(s).png' onClick={()=>{
+                      setTimeout(()=>{props.setValue(3)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}   alt='sweat'></img>
                     <div className='characterFontWarper'>  
                       <div className='sweatFont1'>농쭉이</div>
                       <div className='sweatFont2'>달콤새콤</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner4 characterBanners'>
-                    <img src='/images/character/bambi(s).png' onClick={()=>props.setValue(4)}  alt='bambi'></img>
+                    <img src='/images/character/bambi(s).png'onClick={()=>{
+                      setTimeout(()=>{props.setValue(4)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}   alt='bambi'></img>
                     <div className='characterFontWarper'>  
                       <div className='bambi1'>김밤비</div>
                       <div className='bambi2'>김밤비</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner5 characterBanners'>
-                    <img src='/images/character/kaldae(s).png' onClick={()=>props.setValue(5)}  alt='kaldae'></img>
+                    <img src='/images/character/kaldae(s).png' onClick={()=>{
+                      setTimeout(()=>{props.setValue(5)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}   alt='kaldae'></img>
                     <div className='characterFontWarper'>  
                       <div className='kaldae1'>칼데하데</div>
                       <div className='kaldae2'>칼데하데</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner6 characterBanners'>
-                    <img src='/images/character/turtle(s).png' onClick={()=>props.setValue(6)}  alt='turtle'></img>
+                    <img src='/images/character/turtle(s).png' onClick={()=>{
+                      setTimeout(()=>{props.setValue(6)}, 0.7*1000)
+                      props.setToggleAni(!props.toggleAni);
+                    }}  alt='turtle'></img>
                     <div className='characterFontWarper'>  
                       <div className='turtle1'>거북바위솔</div>
                       <div className='turtle2'>거북바위솔</div>

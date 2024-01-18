@@ -23,15 +23,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-  overflow:scroll;
-  
-
-}
 ::-webkit-scrollbar {
-  width: 10px; /* 스크롤 바의 너비 */
-  height:0px;
+  width: 7px; /* 스크롤 바의 너비 */
+  height: 7px;
   
   background-color: #161514; /* 스크롤 바의 배경색 */
 }
@@ -46,7 +40,58 @@ body {
   transition:all 1s;
   background-color: #E9D894; /* 스크롤 바의 색상 */
 }
+::-webkit-scrollbar-corner {
+	background: #161514;
+}
 
+
+/*애니메이션*/
+
+
+.page-loading-blocks, 
+.gray{
+    height: 100vh;
+    width: 100%;
+    background: #49494e;
+
+
+}
+
+
+.page-loading-blocks{
+    width: 110%;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transform: translateX(110%);
+    animation: trans-left 1.5s cubic-bezier(0.7, 0, 0.1, 0.5) forwards;
+}
+
+.gray-bg{
+    z-index: 99;
+    animation-delay: 0.3s;
+}
+.black{
+  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  background: #161514;
+}
+
+@keyframes trans-left {
+    from{
+      transform: translate(110%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    
+    to{
+        transform: translateX(-110%);
+    }
+}
+
+/*애니메이션*/
 
 ol, ul {
 	list-style: none;
@@ -64,21 +109,24 @@ table {
 	border-spacing: 0;
 }
 .App{
-
-
   background-color:#161514 ;
   font-family: 'Noto Sans KR', sans-serif;
   color:white;
+  min-width: 1050px;
 }
+
 .mainWarper{
   margin:0px 40px;
-  overflow-x: hidden;
+  min-width: 990px;
+  overflow: hidden;
+  
 }
 .headWarper{
   margin-top:25px;
   display: grid;
   grid-template-columns: 3fr 6fr 3fr;
-  min-width: 1095px;
+  min-width: 910px;
+  grid-gap: 20px;
 }
 .headMenuWarp {
   min-width: 910px;
@@ -122,6 +170,7 @@ table {
 .bodyGrid{
   display:grid;
   grid-template-columns: 3fr 6fr 3fr;
+  grid-gap: 20px;;
 
 }
 .bodyImgWarp{
@@ -144,7 +193,7 @@ table {
   position:absolute;
   font-size: 47px;
   color:#fff;
-
+  line-height: 51px;
   bottom:-1.5px;
   left:50%;
   transform: translate(-50%,0%);
@@ -281,6 +330,15 @@ table {
 .HouseImg1,.HouseImg2,.HouseImg3{
   width:100%;
   height:400px;
+  overflow: hidden;
+  position:relative;
+}
+.HouseImg1>img,.HouseImg2>img,.HouseImg3>img{
+  width:100%;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 .HouseImg3{
   margin-bottom: 70px;
@@ -291,6 +349,7 @@ table {
 }
 .footerWarper{
   width:100%;
+  min-width: 1050px;
   height:91px;
   padding:40px 0px;
   background-color: #211E20;
@@ -299,6 +358,7 @@ table {
   display:grid;
   grid-template-columns: 3fr 6fr 3fr;
   margin:0px 40px;
+  grid-gap:20px;
 }
 .footerMain{
   width:910px;
@@ -367,8 +427,9 @@ table {
 .chrIntro1Warp{
   width:100%;
   height:100vh;
+  min-height:800px;
   position:relative;
-  overflow: hidden;
+  overflow:hidden;
   display:grid;
   grid-template-columns: 1fr;
   
@@ -425,7 +486,7 @@ table {
 }
 .chrInfoTitle{
   font-size: 55px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 .chrInfoSubTitle{
   font-size: 20px;
@@ -514,7 +575,7 @@ table {
   grid-gap: 20px;
 }
 .infoWarp{
-  width:910px;
+  min-width:910px;
 
 }
 .infoTitle{
@@ -526,18 +587,27 @@ table {
   margin-bottom:45px;
 }
 .infoBox1{
-  width:373px;
+  min-width:373px;
   height:400px;
   margin-right:20px;
   background-color: #211E20;
   display:flex;
   justify-content:center ;
   align-items: center;
+  position:relative;
+}
+.infoBox1>img{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
 }
 .infoBox2{
-  width:517px;
+  min-width:517px;
   height:400px;
   background-color: #211E20;
+  flex-grow: 1;
+  overflow:hidden;
 }
 .infoBoxTextWarp1{
   font-size: 16px;
@@ -560,10 +630,20 @@ table {
 }
 .infoBox3{
   height:400px;
-  width:270px;
+  min-width:270px;
   background-color: #211E20;
   margin-right:20px;
+  flex-grow: 1;
+  overflow:hidden;
+  position:relative;
 }
+.infoBox3>img{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+}
+
 .infoBox4{
   height:400px;
   width:620px;
@@ -602,8 +682,17 @@ table {
   align-items: center;
 }
 .infoBox6{
-  width:688px;
+  min-width:688px;
   height:400px;
+  flex-grow: 1;
+  overflow:hidden;
+  position:relative;  
+}
+.infoBox6>img{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
 }
 .infoBoxTextWarp3{
   font-size: 16px;
@@ -627,13 +716,6 @@ table {
   font-size: 14px;
   opacity: 0.8;
 }
-@media (max-width:1088px){
-  .headWarper{
-    min-width: 100%;
-  }
-  .chrInfo{
-    width:180px;
-  }
-}
+
 
 

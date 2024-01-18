@@ -1,6 +1,7 @@
 import React from 'react';
 
     function CHARACTERINFO(props){
+
         const LeftArrow = ()=>{
             return(
             <div className='arrowLeftWarp'>
@@ -162,10 +163,10 @@ import React from 'react';
                 role :
                     <ul className='chrInfoRole'>
                     역할
-                        <li>하고싶은거 3</li>
-                        <li>하고싶은거 3</li>
-                        <li>하고싶은거 3</li>
-                        <li>하고싶은거 3</li>
+                        <li>딥던전, 던전</li>
+                        <li>고민상담</li>
+                        <li>라라펠 룩상담</li>
+                        <li>고대 무기</li>
                     </ul>,
                 time :
                     <div>
@@ -179,10 +180,10 @@ import React from 'react';
                 <div className='chrinfoImg'>
                     <img src='/images/character/charImg(3).png' alt='uyna(L)'></img>
                     <div className='chrinfoImgText'>
-                    <div>하고싶은거3</div>
-                    <div>하고싶은거3</div>
-                    <div>하고싶은거3</div>
-                    <div>하고싶은거3</div>
+                    <div>딥던전, 던전</div>
+                    <div>고민상담</div>
+                    <div>라라펠 룩상담</div>
+                    <div>고대 무기</div>
                     </div>
                 </div>    
                 
@@ -382,7 +383,11 @@ import React from 'react';
                             {getIdList[(props.value)-1].charImgset}
                     <div className='rightArea'>
                         <div className='closeButton'>
-                            <img alt="closeButton" src='/images/icon/closeicon.png' className='closeButton' onClick={()=>props.setValue(0)}></img>
+                            <img alt="closeButton" src='/images/icon/closeicon.png' className='closeButton' onClick={()=>{
+                                setTimeout(()=>{props.setValue(0)}, 0.7*1000)
+                                props.setToggleAni(!props.toggleAni);
+                                props.setControlAni(prev=>prev + 1);
+                                }}></img>
                         </div>
                         {props.value === 6 ? <div></div> : <RightArrow/> }
                     </div>
