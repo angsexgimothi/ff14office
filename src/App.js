@@ -10,9 +10,6 @@ import ANIMATION from './components/animation.js';
 const App = () => {
   let [value,setValue] = useState(0);
   let [headValue,setHeadValue] = useState(1);
-  let [toggleAni,setToggleAni] = useState(false);
-  let [controlAni,setControlAni] = useState(0);
-  let [toggleAni2,setToggleAni2] = useState(false);
   const [anim, setAnim] = useState(false);
   // useEffect(()=>{
   // console.log(value);
@@ -21,12 +18,7 @@ const App = () => {
   // useEffect(()=>{
   //   console.log(headValue);
   // },[headValue]);
-  useEffect(()=>{
-    console.log(controlAni);
-  },[controlAni]);
-  useEffect(()=>{
-    console.log(toggleAni);
-  },[toggleAni])
+
   return (
     <div className="App">
       <div className='mainWarper'>
@@ -36,7 +28,6 @@ const App = () => {
         {value === 0 && headValue === 1 ? <MAINBODY 
         anim = {anim}
         setValue={setValue} 
-        toggleAni = {toggleAni} setToggleAni = {setToggleAni}
         setAnim = {setAnim}
         /> :<></> }
         {headValue ===2 ? <INFORMATION/> : <></>}
