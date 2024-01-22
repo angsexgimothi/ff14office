@@ -15,6 +15,11 @@ const App = () => {
 
   return (
     <div className="App">
+        {headValue === 3 ?
+          <div className='contact_BG_cover'> 
+            <img src="images/etc/contact_bg.png" alt="BG" className="contact_BG"></img>
+          </div>  
+          : <></>}
       <div className='mainWarper'>
         {anim ? <ANIMATION setAnim={setAnim}/> : <></>}
         

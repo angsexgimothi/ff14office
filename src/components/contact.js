@@ -1,13 +1,13 @@
 import React from "react";
 
 const CONTACT= () =>{
-<div>
+    return(
+    <div className="contactWarper">
+        <div>
 
-
-
-
-
-</div>
+        </div>
+    </div>
+    )
 }
 
 export default CONTACT;
