@@ -1,5 +1,13 @@
 
-const MAINBODY = (props) => {    
+const MAINBODY = (props) => {
+  const addAnimation = (e)=>{
+    e.stopPropagation();
+    e.currentTarget.firstElementChild.classList.add('activeAni');
+  }
+  const removeAnimation = (e)=>{
+    e.stopPropagation();
+    e.currentTarget.firstElementChild.classList.remove('activeAni');
+  }
     return(
       <div className='mainbodywarper'>
           <div className='bodyGrid'>
@@ -29,21 +37,35 @@ const MAINBODY = (props) => {
                 </div>  
                 
                 <div className='bodyCharacterBannerGrid'>
-                  <div className='bodyCharacterBanner1 characterBanners'>
+                  <div className='bodyCharacterBanner1 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img src='/images/character/unya(s).png' onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(1)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(1)}, 0.5*1000)
                       props.setAnim(true);
-                    }}  alt='unya' ></img>
+                    }}
+
+                    alt='unya' ></img>
                     <div className='characterFontWarper'>  
                       <div className='unyaFont1'>우냐</div>
                       <div className='unyaFont2'>우냐</div>
                     </div>
                   </div>
-                  <div className='bodyCharacterBanner2 characterBanners'>
+                  <div className='bodyCharacterBanner2 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img  src='/images/character/tigim(s).png' onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(2)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(2)}, 0.5*1000)
                       props.setAnim(true);
                     }}   alt='tigim'></img>
                     <div className='characterFontWarper'>  
@@ -51,10 +73,16 @@ const MAINBODY = (props) => {
                       <div className='tigimFont2'>티김</div>
                     </div>
                   </div>
-                  <div className='bodyCharacterBanner3 characterBanners'>
+                  <div className='bodyCharacterBanner3 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img  src='/images/character/sweat(s).png' onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(3)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(3)}, 0.5*1000)
                       props.setAnim(true);
                     }}   alt='sweat'></img>
                     <div className='characterFontWarper'>  
@@ -62,10 +90,16 @@ const MAINBODY = (props) => {
                       <div className='sweatFont2'>달콤새콤</div>
                     </div>
                   </div>
-                  <div className='bodyCharacterBanner4 characterBanners'>
+                  <div className='bodyCharacterBanner4 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img src='/images/character/bambi(s).png'onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(4)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(4)}, 0.5*1000)
                       props.setAnim(true);
                     }}   alt='bambi'></img>
                     <div className='characterFontWarper'>  
@@ -73,10 +107,16 @@ const MAINBODY = (props) => {
                       <div className='bambi2'>김밤비</div>
                     </div>
                   </div>
-                  <div className='bodyCharacterBanner5 characterBanners'>
+                  <div className='bodyCharacterBanner5 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img src='/images/character/kaldae(s).png' onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(5)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(5)}, 0.5*1000)
                       props.setAnim(true);
                     }}   alt='kaldae'></img>
                     <div className='characterFontWarper'>  
@@ -84,10 +124,16 @@ const MAINBODY = (props) => {
                       <div className='kaldae2'>칼데하데</div>
                     </div>
                   </div>
-                  <div className='bodyCharacterBanner6 characterBanners'>
+                  <div className='bodyCharacterBanner6 characterBanners'
+                      onMouseOver={addAnimation}
+                      onMouseLeave={removeAnimation}  
+                  >
+                    <div className="characterBannersAni">
+
+                    </div>
                     <img src='/images/character/turtle(s).png' onClick={()=>{
                       if(props.anim) return;
-                      setTimeout(()=>{props.setValue(6)}, 0.7*1000)
+                      setTimeout(()=>{props.setValue(6)}, 0.5*1000)
                       props.setAnim(true);
                     }}  alt='turtle'></img>
                     <div className='characterFontWarper'>  
@@ -103,13 +149,13 @@ const MAINBODY = (props) => {
                   내부 사진
                 </div>
                 <div className='HouseImg1'>
-                  <img src='/images/building/office_1.png' alt='office1'></img>  
+                  <img src='/images/etc/office_1.png' alt='office1'></img>  
                 </div>
                 <div className='HouseImg2'>
-                <img src='/images/building/office_2.png' alt='office2'></img>    
+                <img src='/images/etc/office_2.png' alt='office2'></img>    
                 </div>
                 <div className='HouseImg3'>
-                  <img src='/images/building/office_3.png' alt='office3'></img>    
+                  <img src='/images/etc/office_3.png' alt='office3'></img>    
                 </div>
               </div>
               <div className='main'>

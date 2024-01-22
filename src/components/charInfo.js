@@ -7,19 +7,20 @@ import React from 'react';
             <div className='arrowLeftWarp'>
                 <img alt='arrowLeft' src='/images/icon/arrowLeft.png' className='arrowLeft' onClick={()=>{
                     if(props.anim) return;
-                    setTimeout(()=>{props.setValue(props.value-1)}, 0.7*1000)
+                    setTimeout(()=>{props.setValue(props.value-1)}, 0.5*1000)
                     props.setAnim(true);
                     
-                    }}></img>
+                    }}
+                    ></img>
             </div>
             )
         }
         const RightArrow = ()=>{
             return(
             <div className='arrowRightWarp'>
-                <img alt='arrowright' src='/images/icon/arrowRight.png' className='arrowright' onClick={()=>{
+                <img alt='arrowRight' src='/images/icon/arrowRight.png' className='arrowRight' onClick={()=>{
                     if(props.anim) return;
-                    setTimeout(()=>{props.setValue(props.value+1)}, 0.7*1000)
+                    setTimeout(()=>{props.setValue(props.value+1)}, 0.5*1000)
                     props.setAnim(true);
                 }}></img>
             </div>
@@ -216,7 +217,7 @@ import React from 'react';
                 </div>,
                 subtitle :  
                 <div className='chrInfoSubTitle'>       
-                    대충 하고싶은 한마디. 강조하게.4
+                    무한 긍정의 수석 탐정
                 </div>,
                 text :
                     <div className='chrInfoText'>
@@ -394,7 +395,7 @@ import React from 'react';
                         <div className='closeButton'>
                             <img alt="closeButton" src='/images/icon/closeicon.png' className='closeButton' onClick={()=>{
                                 if(props.anim) return;
-                                setTimeout(()=>{props.setValue(0)}, 0.7*1000)
+                                setTimeout(()=>{props.setValue(0)}, 0.5*1000)
                                 props.setAnim(true);
                                 // props.setControlAni(prev=>prev + 1);
                                 }}></img>

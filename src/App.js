@@ -6,18 +6,12 @@ import FOOTER from './components/mainFooter.js';
 import CHARACTERINFO from './components/charInfo.js';
 import INFORMATION from './components/Information.js';
 import ANIMATION from './components/animation.js';
+import CONTACT from './components/contact.js';
 
 const App = () => {
   let [value,setValue] = useState(0);
   let [headValue,setHeadValue] = useState(1);
   const [anim, setAnim] = useState(false);
-  // useEffect(()=>{
-  // console.log(value);
-  
-  // },[value]);
-  // useEffect(()=>{
-  //   console.log(headValue);
-  // },[headValue]);
 
   return (
     <div className="App">
@@ -30,16 +24,14 @@ const App = () => {
         setValue={setValue} 
         setAnim = {setAnim}
         /> :<></> }
-        {headValue ===2 ? <INFORMATION/> : <></>}
+        {headValue === 2 ? <INFORMATION/> : <></>}
+        {headValue === 3 ? <CONTACT/> : <></>}
       </div>
       {value === 0? <FOOTER /> : <></>}
       {value === 0? <></> : <CHARACTERINFO 
       value = {value} setValue={setValue} 
       setAnim={setAnim}
       anim = {anim}
-      // toggleAni = {toggleAni} setToggleAni = {setToggleAni}
-      // controlAni = {controlAni} setControlAni = {setControlAni}
-      // toggleAni2 = {toggleAni2} setToggleAni2 = {setToggleAni2}
       />}
     </div>
 

@@ -24,12 +24,12 @@ import React from "react";
                         </div>
                         
                         <div className="infoBox2">
-                            <img src="/images/building/office_meeting.png" alt="meeting"></img>    
+                            <img src="/images/etc/office_meeting.png" alt="meeting"></img>    
                         </div>    
                     </div>
                     <div className="infoBoxWarp2">
                         <div className="infoBox3">
-                            <img src="/images/building/office_book.png" alt="book"></img>    
+                            <img src="/images/etc/office_book.png" alt="book"></img>    
                         </div>
                         
                         <div className="infoBox4">
@@ -68,7 +68,7 @@ import React from "react";
                         </div>
                         
                         <div className="infoBox6">
-                            <img src="/images/building/office_sweet_bambi.png" alt="duo"></img>  
+                            <img src="/images/etc/office_sweet_bambi.png" alt="duo"></img>  
                         </div>    
                     </div>  
                 </div>

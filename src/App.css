@@ -53,8 +53,6 @@ footer, header, hgroup, menu, nav, section {
     height: 100vh;
     width: 100%;
     background: #49494e;
-
-
 }
 
 
@@ -64,12 +62,12 @@ footer, header, hgroup, menu, nav, section {
     top: 0;
     z-index: 999;
     transform: translateX(110%);
-    animation: trans-left 1.5s cubic-bezier(0.7, 0, 0.1, 0.5) forwards;
+    animation: trans-left 1s cubic-bezier(0.7, 0, 0.1, 0.5) forwards;
 }
 
 .gray-bg{
     z-index: 99;
-    animation-delay: 0.3s;
+    animation-delay: 0.4s;
 }
 .black{
   z-index: 99;
@@ -236,9 +234,25 @@ table {
 .characterBanners{
   position:relative;
 }
+.characterBannersAni{
+  transition: all ease 0.4s;
+  width:290px;
+  height:0px;
+  background-color: #49494e;
+  position:absolute;
+  bottom:0px;
+  left:0px;
+}
+.activeAni{
+  height:380px;
+}
+
 .characterBanners>img{
   position:relative;
   z-index: 1;
+  cursor:pointer;
+  width:290px;
+  height:380px;
 }
 .characterFontWarper{
   font-family: ds-stereo-wild, sans-serif;
@@ -452,11 +466,15 @@ table {
   align-items: center;
   position:relative;
 }
+.arrowRight,.arrowLeft{
+  cursor:pointer;
+}
 .closeButton{
   position:absolute;
   top:-20px;
   right:50%;
   transform: translate(50%,0);
+  cursor:pointer;
 
 }
 
