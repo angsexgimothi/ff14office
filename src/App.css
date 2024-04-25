@@ -155,7 +155,7 @@ table {
   display:inline-block;
   height:30px;
   line-height: 30px;;
-  margin-bottom:30px;
+  margin-bottom:20px;
   font-size: 16px;
   position: relative;
   z-index: 1;
@@ -509,8 +509,8 @@ table {
   justify-content: space-between;
 }
 .chrInfoTitle{
-  font-size: 55px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .chrInfoSubTitle{
   font-size: 20px;
@@ -524,12 +524,18 @@ table {
   overflow:hidden ;
   line-height: 20px;;
 }
+.chrInfoText>div{
+  margin-bottom:10px;
+}
 .chrInfoRole{
   font-size: 20px;
 }
+.chrInfoRole>div{
+  margin-bottom: 10px;
+}
 .chrInfoRole>li{
   font-size: 16px;
-  margin: 20px 0;
+  margin: 10px 0;
   line-height:20px;
   opacity: 0.8;
 
@@ -537,8 +543,11 @@ table {
 .chrInfoTime{
   font-size: 20px;
 }
+.chrInfoTime>div{
+  margin-bottom:10px;
+}
 .chrInfoTime>li{
-  margin: 20px 0;
+  margin: 10px 0;
   font-size: 16px;
   line-height: 20px;
   opacity: 0.8;
@@ -572,6 +581,7 @@ table {
   font-weight: 800;
 
 }
+
 .chrinfoImgText>div:first-child{
   right:0px;
   bottom:0px;
@@ -591,6 +601,16 @@ table {
   right:240px;
   bottom:0px;
   opacity: 0.2;
+}
+.Boss{
+  right:0px !important;
+  bottom:0px;
+  opacity: 0.5 !important;
+}
+.Detective{
+  right:-20px !important;
+  bottom:100px!important;
+  opacity: 0.5 !important;
 }
 .infoGrid{
   display:grid;
@@ -754,4 +774,124 @@ table {
   left:50%;
   top:50%;
   transform:translate(-50%,-50%);
+  opacity: 0.6;
+}
+.contactSubWarper{
+  min-width:910px;
+}
+.contactWarper{
+  display:grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-gap: 20px;
+  position:relative;
+  z-index: 1;
+}
+.contactTitleWarp{
+  display:flex;
+  justify-content: space-between;
+  
+}
+.contactTitle{
+  font-size: 25px;
+  margin-bottom:20px;
+}
+.contactInput{
+  background-color: #161514;
+  opacity: 0.6;
+  width:300px;
+  height:26px;
+  box-shadow: none;
+  border:none;
+  margin-top:3px;
+  color:white;
+  padding-left:6px;
+}
+.contactInput:focus,.contactInput:active{
+  outline: none;
+  box-shadow: none;
+}
+.contactInput::placeholder{
+  color:#fff;
+  opacity: 0.8;
+  margin-left: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.contactInputWarper{
+  display:flex;
+  
+}
+.glassWarper{
+  margin-top:3px;
+  height:26px;
+  width:26px;
+  background-color: #161514;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.glass{
+  width:20px;
+  height:20px;
+  opacity:0.8;
+}
+.contactSubtitleWarp{
+  display:flex;
+  font-size: 14px;
+  opacity: 0.9;
+  margin-bottom:10px;
+}
+.contactSubtitleNumber{
+  margin-right:79px;
+}
+.contactSubtitleTitle{
+  margin-right:491px;
+}
+.contactSubtitleauthor{
+  margin-right:154px;
+}
+.contactBox{
+  width:100%;
+  height:1105px;
+  background-color: #211E20;
+  opacity: 0.8;
+  margin-bottom:20px; 
+  
+}
+.numbers{
+  display:flex;
+  justify-content: space-between;
+}
+.buttonsWarp{
+  display:flex;
+  align-items: center;  
+  height:16px;
+  margin-bottom:70px;
+}
+.buttonsWarp>div{
+  margin-left:4px;
+  margin-right:4px;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: pointer;
+
+}
+
+.latterMoveUp{
+  margin-bottom:3px;
+  opacity: 0.4;
+}
+.addColor{
+  color:#E9D894;
+  opacity: 1;
+}
+.contactButton{
+  width:135px;
+  height:26px;
+  font-size: 16px;
+  background:linear-gradient(to right, #E9D894 0%, #c7b66c 33%, #c7b66c 66%, #E9D894 100%);
+  text-align: center;
+  transform: translate(0%,-25%);
+  cursor: pointer;
 }

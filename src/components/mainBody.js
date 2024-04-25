@@ -86,8 +86,8 @@ const MAINBODY = (props) => {
                       props.setAnim(true);
                     }}   alt='sweat'></img>
                     <div className='characterFontWarper'>  
-                      <div className='sweatFont1'>농쭉이</div>
-                      <div className='sweatFont2'>달콤새콤</div>
+                      <div className='sweatFont1'>하윤이</div>
+                      <div className='sweatFont2'>시골숙녀</div>
                     </div>
                   </div>
                   <div className='bodyCharacterBanner4 characterBanners'

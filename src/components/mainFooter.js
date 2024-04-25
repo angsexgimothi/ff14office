@@ -22,7 +22,7 @@ function FOOTER (){
                   <div>칼데하데 @ 펜리르</div>
                 </div>
                 <div className='footerColumns3'>
-                  <div>달콤새콤농쭉이 @ 펜리르</div>
+                  <div>시골숙녀하윤이 @ 펜리르</div>
                   <div>거북바위솔 @ 펜리르</div>
                 </div>
               </div>
